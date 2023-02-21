@@ -1,0 +1,510 @@
+:root {
+  --primary-color: #e50914;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: black;
+  color: #292929;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  margin: .5rem 0;
+  color: #ffffff;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* utility */
+
+
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  background-color: var(--primary-color);
+  text-align: center;
+  border: none;
+  border-radius: none;
+  outline: none;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.6);
+}
+
+.btn-round {
+  border-radius: 3px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.card-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 6.2rem;
+}
+
+input {
+  width: 28.1rem;
+  height: 3.75rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+input::placeholder{
+  padding-left: 15px;
+}
+
+.section-img{
+  flex: 1;
+}
+
+/* showcase */
+.showcase {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("./img/net.jpg") no-repeat center center / cover;
+}
+
+.showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 20px 20px 100px #000, inset 120px 100px 250px #000;
+}
+
+.showcase-top {
+  height: 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  margin: 0 3rem;
+}
+
+
+.showcase .showcase-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 25%;
+  z-index: 8;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+
+.showcase .showcase-content h1{
+  font-size: 3rem;
+  max-width: 31.2rem;
+}
+
+.showcase .showcase-content p{
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-block: 1rem;
+}
+
+.showcase .showcase-content .p-2{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.questions .btn-icon{
+  font-size: 1.6rem;
+  padding: 0.9rem 1.7rem;
+  margin-left: -5px;
+  transform: translateY(3.7px);
+} 
+
+.showcase  .btn-icon{
+  font-size: 1.6rem;
+  padding: 0.9rem 1.7rem;
+  margin-left: -5px;
+  transform: translateY(2px);
+}
+
+.showcase .showcase-content i{
+  padding-left: 8px;
+}
+
+/* section card */
+
+.section-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 450px; */
+}
+
+.section-cards .section-info{
+padding-right:6.2rem;
+}
+
+.section-cards .section-info-3,
+.section-cards .section-info-2{
+  padding-left: 6.25rem;
+}
+
+.card-img{
+  max-width: 31.2rem;
+}
+
+.section-alone h2,
+.section-cards  h2{
+  font-size: 3.2rem;
+  padding-bottom: 0.6rem;
+}
+
+.section-alone p,
+.section-cards  p{
+  font-size: 1.6rem;
+}
+
+.section-alone{
+  padding: 0 4.3rem;
+}
+
+.section-alone .alone-cont{
+  max-width: 31.2rem;
+  width: 100%;
+}
+
+.section-cards,
+.section-alone,
+.questions,
+.footer{
+  border-top: 8px solid;
+}
+
+.section-alone{
+  padding-block: 1.8rem;
+}
+
+/* questions */
+
+.questions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:3.1rem 3rem;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.questions .p-3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 3.7rem;
+  margin-bottom: 20px;
+}
+
+.questions .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height: 0rem;
+  min-height: 10vh;
+  margin-bottom: 0.6rem;
+  padding-block: 0.9rem;
+  background-color: #3d3d3d;
+  position: relative;
+  padding:0 2rem;
+}
+
+.questions .inner p {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.questions .p-5{
+  font-size: 1.12rem;
+  letter-spacing: 0.5px;
+}
+
+/* footer section */
+
+.footer {
+  padding: 4.3rem 0 1.8rem;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 59rem;
+  margin: 0 auto;
+  padding:0.6rem 3.1rem;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.list .list-menu .list-item {
+  margin-bottom: 0.75rem;
+}
+
+.footer p,
+.footer a {
+  font-size: 0.9rem;
+  color: #5c5c5c;
+}
+
+.footer .p-6 {
+  padding-bottom: 1.2rem;
+  font-size: 1.06rem;
+}
+
+.footer .p-7 {
+  padding-top: 1.2rem;
+} 
+
+
+/* media queries */
+@media (max-width:1120px){
+
+  .showcase{
+    height: 90vh;
+  }
+.section-cards .card-container{
+  padding: 6.2rem 2.5rem;
+}
+
+.section-alone h2,
+.section-cards h2 {
+  font-size: 2.7rem;
+  padding-bottom: 0.6rem;
+}
+
+.questions .p-3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 3.6rem;
+  margin-bottom: 1.6rem;
+}
+.questions .inner {
+  width: 100%;
+  height: 0rem;
+  min-height: 8vh;
+  margin-bottom: 8px;
+}
+.questions .inner p {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+} 
+
+@media (max-width:920px){
+.showcase{
+  height: 90vh;
+}
+
+.showcase .showcase-content{
+  top: 20%;
+}
+
+.showcase .showcase-content h1{
+  margin: 0;
+}
+
+.showcase .showcase-content p{
+  padding-block: 0;
+}
+
+.showcase .showcase-content .p-2 {
+  padding: 0 5rem;
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+
+.showcase .form,
+.questions .form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.questions .btn-icon,
+.showcase .btn-icon {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 10px;
+  transform: translateY(0);
+}
+
+.card-container {
+  flex-direction: column;
+  text-align: center;
+  /* padding: 2rem 6.2rem; */
+}
+
+.section-cards .section-info {
+  padding-right: 0;
+}
+
+.section-alone h2,
+.section-cards h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 0.6rem;
+}
+
+.section-alone p,
+.section-cards p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.section-cards .section-info-3,
+.section-cards .section-info-2 {
+  padding-left: 0;
+}
+
+.section-alone .alone-cont {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.questions .p-5 {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  width:30rem ;
+}
+
+}
+
+@media (max-width:750px){
+.showcase{
+  height: 95vh;
+
+}
+
+.showcase .showcase-content{
+  padding-bottom: 100px;
+    top: 15%;
+}
+
+input{
+  height: 3rem;
+}
+
+.showcase .showcase-content .p-2 {
+  font-size: 1.1rem;
+  font-weight: 400; 
+  padding: 0 40px;
+}
+}
+
+@media (max-width:550px){
+.showcase{
+  height: 90vh;
+}
+
+.logo{
+  width: 120px;
+}
+
+.showcase .btn-round{
+  padding: 6px 10px;
+  font-size: 12px;
+}
+.showcase .showcase-content h1 {
+  font-size: 1.6rem;
+}
+
+.showcase .showcase-content p {
+  font-size: 1.1rem;
+}
+.showcase .showcase-content .p-2 {
+  padding: 0 5rem;
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+input{
+  max-width: 25rem;
+  margin: 0 5px;
+}
+
+.section-alone h2,
+.section-cards h2 {
+  font-size: 1.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.section-alone p,
+.section-cards p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.questions .inner p{
+font-size: 1.1rem;
+}
+
+.questions {
+  padding: 3.1rem 0rem;
+}
+
+.questions .p-3{
+  font-size: 1.6rem;
+}
+
+.questions .p-5{
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.hide{
+  display: none;
+}
+
+}
